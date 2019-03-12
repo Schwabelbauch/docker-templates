@@ -3,6 +3,7 @@
   <Name>NginxProxyManager</Name>
   <Repository>schwabelbauch/nginx-proxy-manager</Repository>
   <Registry>https://hub.docker.com/r/schwabelbauch/nginx-proxy-manager/</Registry>
+  <GitHub>https://github.com/schwabelbauch/docker-nginx-proxy-manager</GitHub>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/76460-support-nginx-proxy-manager/</Support>
