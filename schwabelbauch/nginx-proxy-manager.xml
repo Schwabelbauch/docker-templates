@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>NginxProxyManager</Name>
-  <Repository>Schwabelbauch/docker-nginx-proxy-manager</Repository>
+  <Repository>schwabelbauch/docker-nginx-proxy-manager</Repository>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/76460-support-nginx-proxy-manager/</Support>
@@ -10,7 +10,7 @@
   </Overview>
   <Category>Network:Web Network:Proxy Tools:</Category>
   <WebUI>http://[IP]:[PORT:81]</WebUI>
-  <TemplateURL>https://github.com/Schwabelbauch/docker-templates/master/schwabelbauch/nginx-proxy-manager.xml</TemplateURL>
+  <TemplateURL>https://github.com/schwabelbauch/docker-templates/master/schwabelbauch/nginx-proxy-manager.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/nginx-proxy-manager-icon.png</Icon>
   <ExtraParams/>
   <Description>
