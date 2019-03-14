@@ -11,7 +11,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://github.com/schwabelbauch/docker-templates/master/schwabelbauch/wiki-js-v1.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Requarks/wiki-v1/master/assets/favicons/ms-icon-150x150.png</Icon>
+  <Icon>https://raw.githubusercontent.com/schwabelbauch/docker-templates/master/schwabelbauch/images/wiki-js-v1.png</Icon>
   <ExtraParams/>
   <DonateText/>
   <DonateLink>https://opencollective.com/wikijs<DonateLink>
