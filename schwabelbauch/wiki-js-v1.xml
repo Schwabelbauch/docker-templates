@@ -40,7 +40,7 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>markus_bucher@sixtec.de</Value>
+      <Value>admin@example.com</Value>
       <Name>WIKI_ADMIN_EMAIL</Name>
       <Mode/>
     </Variable>
