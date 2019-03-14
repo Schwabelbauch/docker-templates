@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Wiki.js v1</Name>
+  <Repository>requarks/wiki</Repository>
+  <Registry>requarks/wiki:latest</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/requarks/wiki/</Support>
+  <Project>https://wiki.js.org/</Project>
+  <Overview>Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://github.com/schwabelbauch/docker-templates/master/schwabelbauch/wiki-js-v1.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Requarks/wiki-v1/master/assets/favicons/ms-icon-150x150.png</Icon>
+  <ExtraParams/>
+  <DonateText/>
+  <DonateLink>https://opencollective.com/wikijs<DonateLink>
+  <Description>
+    Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS
+    [br][br]
+    Its importand to copy, rename and customize the [a href="https://raw.githubusercontent.com/Requarks/wiki-v1/master/config.sample.yml"]config.sample.yml[/a] to the appdata location, before start the container.  
+  </Description>
+  <Beta>False</Beta>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wikijs/config.yml</HostDir>
+      <ContainerDir>/var/wiki/config.yml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>markus_bucher@sixtec.de</Value>
+      <Name>WIKI_ADMIN_EMAIL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="HTTP" Target="3000" Default="3000" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Admin email" Target="WIKI_ADMIN_EMAIL" Default="" Mode="" Description="Container Variable: WIKI_ADMIN_EMAIL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config file" Target="/var/wiki/config.yml" Default="" Mode="rw" Description="Path to the config.yml. &lt;b&gt;You have to create the config.yml before!&lt;/b&gt;" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+</Container>
