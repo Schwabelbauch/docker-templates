@@ -14,7 +14,7 @@
   <Icon>https://raw.githubusercontent.com/schwabelbauch/docker-templates/master/schwabelbauch/images/wiki-js-v1.png</Icon>
   <ExtraParams/>
   <DonateText/>
-  <DonateLink>https://opencollective.com/wikijs<DonateLink>
+  <DonateLink>https://opencollective.com/wikijs</DonateLink>
   <Description>
     Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS
     [br][br]
