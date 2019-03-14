@@ -40,7 +40,7 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>admin@example.com</Value>
+      <Value></Value>
       <Name>WIKI_ADMIN_EMAIL</Name>
       <Mode/>
     </Variable>
@@ -48,5 +48,5 @@
   <Labels/>
   <Config Name="HTTP" Target="3000" Default="3000" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Admin email" Target="WIKI_ADMIN_EMAIL" Default="" Mode="" Description="Container Variable: WIKI_ADMIN_EMAIL" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Config file" Target="/var/wiki/config.yml" Default="" Mode="rw" Description="Path to the config.yml. &lt;b&gt;You have to create the config.yml before!&lt;/b&gt;" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Config file" Target="/var/wiki/config.yml" Default="/mnt/user/appdata/wikijs/config.yml" Mode="rw" Description="Path to the config.yml. Must be created before!" Type="Path" Display="advanced" Required="true" Mask="false"/>
 </Container>
