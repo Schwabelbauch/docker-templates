@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Wiki.js-V2</Name>
-  <Repository>requarks/wiki</Repository>
+  <Repository>requarks/wiki:beta</Repository>
   <Registry>requarks/wiki:beta</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
