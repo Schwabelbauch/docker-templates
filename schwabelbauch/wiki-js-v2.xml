@@ -34,9 +34,9 @@
   <Labels/>
   <Config Name="HTTP" Target="3000" Default="3000" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="DB Type" Target="DB_TYPE" Default="postgres" Mode="" Description="Type of database (mysql, postgres, mariadb, mssql or sqlite)" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="DB Host" Target="DB_HOST" Default="" Mode="" Description="Hostname or IP of the database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Host" Target="DB_HOST" Default="tower.local" Mode="" Description="Hostname or IP of the database" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DB Port" Target="DB_PORT" Default="5432" Mode="" Description="Port of the database" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="DB User" Target="DB_USER" Default="" Mode="" Description="Username to connect to the database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB User" Target="DB_USER" Default="postgres" Mode="" Description="Username to connect to the database" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DB Pass" Target="DB_PASS" Default="" Mode="" Description="Password to connect to the database" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="DB Name" Target="DB_NAME" Default="" Mode="" Description="Database name" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Name" Target="DB_NAME" Default="wikijs2" Mode="" Description="Database name" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>
