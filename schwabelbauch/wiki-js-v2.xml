@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Wiki.js-V2</Name>
+  <Repository>requarks/wiki</Repository>
+  <Registry>requarks/wiki:beta</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/requarks/wiki/</Support>
+  <Project>https://wiki.js.org/</Project>
+  <Overview>Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://github.com/schwabelbauch/docker-templates/master/schwabelbauch/wiki-js-v2.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/schwabelbauch/docker-templates/master/schwabelbauch/images/wiki-js-v2.png</Icon>
+  <ExtraParams/>
+  <DonateText/>
+  <DonateLink>https://opencollective.com/wikijs</DonateLink>
+  <Description>
+    Wiki.js - A modern, lightweight and powerful wiki app built on NodeJS
+    [br][br]
+    Its importand to copy, rename and customize the [a href="https://raw.githubusercontent.com/Requarks/wiki-v1/master/config.sample.yml"]config.sample.yml[/a] to the appdata location, before start the container.  
+  </Description>
+  <Beta>True</Beta>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Labels/>
+  <Config Name="HTTP" Target="3000" Default="3000" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Type" Target="DB_TYPE" Default="postgres" Mode="" Description="Type of database (mysql, postgres, mariadb, mssql or sqlite)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Host" Target="DB_HOST" Default="" Mode="" Description="Hostname or IP of the database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Port" Target="DB_PORT" Default="5432" Mode="" Description="Port of the database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB User" Target="DB_USER" Default="" Mode="" Description="Username to connect to the database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Pass" Target="DB_PASS" Default="" Mode="" Description="Password to connect to the database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB Name" Target="DB_NAME" Default="" Mode="" Description="Database name" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
